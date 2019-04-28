@@ -1,0 +1,11 @@
+* {
+	color: #ecbc48;
+}
+body {
+	background: #1c1d1e;
+}
+.mainCont {
+	text-align: left;
+	width: 30vw;
+	margin-left: 35vw;
+}

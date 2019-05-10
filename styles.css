@@ -38,7 +38,7 @@ h2 {
 }
 
 p {
-    font-size: 1.4vh;
+    font-size: 2.0vh;
 }
 
 .mainCont {
@@ -49,11 +49,11 @@ p {
 }
 
 #homeCont {
-    padding-top: 34vh !important;
+    padding-top: 28vh !important;
 }
 
 #abtCont {
-    padding-top: 36vh !important;
+    padding-top: 26vh !important;
 }
 
 #portCont {
@@ -61,11 +61,11 @@ p {
 }
 
 #introsCont {
-    padding-top: 22vh !important;
+    padding-top: 8vh !important;
 }
 
 #transCont {
-    padding-top: 34vh !important;
+    padding-top: 30vh !important;
 }
 
 #termsCont {

@@ -3,6 +3,15 @@
     font-family: 'Cabin', sans-serif;
 }
 
+h1 {
+  color:  #ffffff;
+}
+
+h2 {
+  color:  #ffe096;
+}
+
+
 html,
 body {
     margin: none !important;
@@ -69,7 +78,7 @@ p {
 }
 
 #termsCont {
-    padding-top: 24vh !important;
+    padding-top: 16vh !important;
 }
 
 .btn {
@@ -106,7 +115,7 @@ p {
 
 .navbar li a {
     text-decoration: none;
-    color: #ecbc48;
+    color: #ffffff;
     opacity: .8;
     transition: opacity .2s;
     text-transform: uppercase;

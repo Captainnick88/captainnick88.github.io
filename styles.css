@@ -1,11 +1,161 @@
 * {
-	color: #ecbc48;
+    color: #ecbc48;
+    font-family: 'Cabin', sans-serif;
 }
+
+html,
 body {
-	background: #1c1d1e;
+    margin: none !important;
+    padding: none !important;
 }
+
+body {
+    background: #1c1d1e;
+    background-image: url("images/bg.png");
+    background-repeat: repeat;
+    background-size: 5vh;
+    animation: moveBG 30s linear infinite;
+}
+
+@keyframes moveBG {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 25% 100%;
+    }
+}
+
+h1 {
+    font-size: 4vh;
+    line-height: 4.5vh;
+}
+
+h2 {
+    font-size: 2.3vh;
+    line-height: 3vh;
+}
+
+p {
+    font-size: 1.4vh;
+}
+
 .mainCont {
-	text-align: left;
-	width: 30vw;
-	margin-left: 35vw;
+    text-align: left;
+    width: 30vw;
+    margin-left: 35vw;
+    text-align: justify;
+}
+
+#homeCont {
+    padding-top: 34vh !important;
+}
+
+#abtCont {
+    padding-top: 36vh !important;
+}
+
+#portCont {
+    padding-top: 22vh !important;
+}
+
+#introsCont {
+    padding-top: 22vh !important;
+}
+
+#transCont {
+    padding-top: 34vh !important;
+}
+
+#termsCont {
+    padding-top: 24vh !important;
+}
+
+.btn {
+    text-decoration: none;
+    color: #1c1d1e;
+    background: #ecbc48;
+    padding: 1vh 2vh;
+    box-shadow: 0 .5vh 0 #ba8616;
+    position: relative;
+    top: 0;
+    transition: top .2s, box-shadow .2s;
+    margin-right: 1.5vh;
+    text-transform: uppercase;
+    font-size: 1.4vh;
+}
+
+.btn:active {
+    box-shadow: 0 0vh 0 #ba8616;
+    top: .5vh;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 1vh 2vh;
+    float: left;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-right: .5vh;
+    margin-left: .5vh;
+    margin-bottom: 1vh;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #ecbc48;
+    opacity: .8;
+    transition: opacity .2s;
+    text-transform: uppercase;
+    font-size: 1.4vh;
+    border-bottom: 0 solid #ecbc48;
+}
+
+.navbar li a:hover {
+    opacity: 1;
+}
+
+.navbar li a.active {
+    opacity: 1;
+    border-bottom: .2vh solid #ecbc48;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 51.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .navbar li {
+        display: block;
+    }
+    .navbar li a {
+        font-size: 2vh;
+    }
+
+    .btn {
+        display: block;
+        margin-bottom: 1.5vh;
+    }
+
+    .mainCont {
+        width: 50vw;
+        margin-left: 25vw;
+        text-align: left;
+    }
 }

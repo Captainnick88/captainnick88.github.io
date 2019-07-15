@@ -1,0 +1,53 @@
+.navbar li {
+    position: relative;
+    top: -70px;
+    opacity: 0;
+    transition: top 0.5s ease, opacity 0.5s ease;
+}
+
+.navbar .active {
+    top: 0;
+    opacity: 1;
+}
+
+.navbar .instant {
+    transition: none;
+}
+
+p, h1, h2 {
+    position: relative;
+    left: -20px;
+    opacity: 0;
+    transition: left 0.5s ease, opacity 0.5s ease;
+}
+
+p {
+    left: -30px;
+    transition: left 1s ease, opacity 1.2s ease;
+}
+
+p.active, h1.active, h2.active {
+    left: 0;
+    opacity: 1;
+}
+
+.btn {
+    position: relative;
+    left: 20px;
+    opacity: 0;
+    transition: left 1s ease, top .2s, box-shadow .2s, opacity 0.8s ease;
+}
+
+.btn.active {
+    left: 0;
+    opacity: 1;
+}
+
+.videoWrapper {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.videoWrapper.active {
+    opacity: 1;
+}

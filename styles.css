@@ -14,8 +14,9 @@ h2 {
 
 html,
 body {
-    margin: none !important;
-    padding: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
 }
 
 body {
@@ -167,4 +168,62 @@ p {
         margin-left: 25vw;
         text-align: left;
     }
+
+    .col {
+        display: block !important;
+    }
+
+    .container {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+#intro-container .container {
+    width: 300px;
+    background: #333;
+    padding: 5px 20px;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+    margin: 10px;
+    padding-top: 14px;
+}
+
+#intro-container .col {
+    display: inline-table;
+    margin: 0;
+}
+
+#intro-container .container * {
+    color: white;
+    text-align: center;
+}
+
+#intro-container .container:hover {
+    background-color: #504219;
+}
+
+#intro-container .container .hidden {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+    padding-bottom: 14px;
+}
+
+#intro-container .container:hover .hidden {
+    max-height: 400px;
+}
+
+#intro-container p {
+    transition: none;
+}
+
+#intro-container .btn {
+    margin: 0;
+    border: none;
+}
+
+.container h2 {
+    margin: 0;
 }

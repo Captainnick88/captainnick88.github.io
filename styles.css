@@ -71,7 +71,7 @@ p {
 }
 
 #introsCont {
-    padding-top: 8vh !important;
+    padding-top: 16vh !important;
 }
 
 #transCont {
@@ -179,6 +179,20 @@ p {
     }
 }
 
+    
+    #intro-container {
+        width: 100%;
+    }
+
+    #intro-container h2 {
+        line-height: initial;
+    }
+
+    #intro-container .container {
+        width: 300px;
+    }
+}
+
 #intro-container .container {
     width: 300px;
     background: #333;
@@ -200,7 +214,7 @@ p {
     text-align: center;
 }
 
-#intro-container .container:hover {
+#intro-container .container:hover, #intro-container .container:active .hidden {
     background-color: #504219;
 }
 
@@ -211,7 +225,7 @@ p {
     padding-bottom: 14px;
 }
 
-#intro-container .container:hover .hidden {
+#intro-container .container:hover .hidden, #intro-container .container:active .hidden {
     max-height: 400px;
 }
 
@@ -229,7 +243,7 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
-    #intro-container .container:hover .hidden {
+    #intro-container .container:hover .hidden, #intro-container .container:active .hidden {
         max-height: 1200px !important;
     }
 }

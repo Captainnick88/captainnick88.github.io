@@ -102,6 +102,7 @@ p {
 }
 
 .navbar {
+    position: absolute;
     list-style-type: none;
     padding: 1vh 2vh;
     float: left;
@@ -177,8 +178,6 @@ p {
         margin-left: auto !important;
         margin-right: auto !important;
     }
-}
-
     
     #intro-container {
         width: 100%;

@@ -40,15 +40,18 @@ body {
 h1 {
     font-size: 4vh;
     line-height: 4.5vh;
+    cursor:default;
 }
 
 h2 {
     font-size: 2.3vh;
     line-height: 3vh;
+    cursor:default;
 }
 
 p {
     font-size: 2.0vh;
+    cursor:default;
 }
 
 .mainCont {
@@ -58,47 +61,74 @@ p {
     text-align: justify;
 }
 
+.homeCont {
+   /* text-align: left;*/
+    width: 30vw;
+    display:block;
+    margin:auto;
+    text-align:center;
+}   
+
+.homeCont h1 {
+    text-align:center;
+}
+
+.homeCont p {
+    text-align:center;
+    padding:0;
+    margin:10px;
+}
+
 #homeCont {
     padding-top: 28vh !important;
+    text-align:center;
 }
 
 #abtCont {
     padding-top: 26vh !important;
+    text-align:center;
 }
 
 #portCont {
     padding-top: 22vh !important;
+    text-align:center;
 }
 
 #introsCont {
-    padding-top: 16vh !important;
+    padding-top: 5vh !important;
+    text-align:center;
 }
 
 #transCont {
     padding-top: 30vh !important;
+    text-align:center;
 }
 
 #termsCont {
     padding-top: 26vh !important;
+    text-align:center;
 }
 
 .btn {
     text-decoration: none;
+    font-weight:800;
     color: #1c1d1e;
     background: #ecbc48;
     padding: 1vh 2vh;
     box-shadow: 0 .5vh 0 #ba8616;
     position: relative;
     top: 0;
-    transition: top .2s, box-shadow .2s;
+    transition: top .2s, box-shadow .2s,/* padding 3s, font-size 3s*/ ease;
     margin-right: 1.5vh;
     text-transform: uppercase;
     font-size: 1.4vh;
 }
 
-.btn:active {
+.btn:hover {
     box-shadow: 0 0vh 0 #ba8616;
     top: .5vh;
+   /* padding:20px;
+    font-size:1.5em;*/
 }
 
 .navbar {
@@ -181,6 +211,8 @@ p {
 
     #intro-container {
         width: 100%;
+        padding-top:0;
+        margin-top:0;
     }
 
     #intro-container h2 {
@@ -245,4 +277,35 @@ p {
     #intro-container .container:hover .hidden, #intro-container .container:active .hidden {
         max-height: 1200px !important;
     }
+}
+
+strong {
+    color:white !important;
+    font-weight:400;
+}
+
+strong a{
+    color:white;
+    text-decoration:none;
+    transition:color 1s,font-size 1s, font-weight 1s ease;
+}
+
+strong a:hover{
+    font-size:1.5em;
+    font-weight:400;
+    color:#C1FF00;
+}
+
+.footer{
+    width:100%;
+    background-color:#111;
+    position:fixed;
+    bottom:0;
+    text-align:center;
+    padding:10px;
+}
+
+small{
+    color:#aaa;
+    font-weight:100;
 }

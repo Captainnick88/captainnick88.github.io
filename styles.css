@@ -309,3 +309,19 @@ small{
     color:#aaa;
     font-weight:100;
 }
+
+.policy{
+    color:white;
+    text-align:center;
+    margin:0;
+    padding:0;
+    opacity:75%;
+    font-size:default;
+    transition:all .5s ease;
+}
+
+.policy:hover{
+    opacity:100%;
+    cursor:default;
+    font-size:1.2em;
+}

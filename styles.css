@@ -325,3 +325,19 @@ small{
     cursor:default;
     font-size:1.2em;
 }
+
+.payment{
+    color:white;
+    text-align:center;
+    margin:0;
+    padding:0;
+    opacity:75%;
+    font-size:default;
+    transition:all .5s ease;
+}
+
+.payment:hover{
+    opacity:100%;
+    cursor:default;
+    font-size:1.2em;
+}

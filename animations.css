@@ -44,8 +44,8 @@ p.active, h1.active, h2.active {
 }
 
 .btn:hover {
-    padding:20px;
-    font-size:1.5em;
+    padding:15px;
+    font-size:1.2em;
 /*   border:5px solid black;
 */   border-radius:5px;
     background-color:white;
